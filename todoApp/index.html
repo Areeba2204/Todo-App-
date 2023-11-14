@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <style>
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+        input:hover{
+            background-color: black;
+            color: white;
+        }
+        
+    </style>
+</head>
+
+<body style="background-image: url(https://img.freepik.com/free-vector/halftone-background-with-waves_23-2148907690.jpg?w=826&t=st=1694112461~exp=1694113061~hmac=34173d6a5573561c6dcadcc642866920b8b6c3e0879e325c017440c8a3eece3d); background-size: cover;">
+
+    <DIV style="display: flexbox; margin: auto; width: 50%;  padding: 1%;  margin-top: 5%; font-size: 25px;">
+        <div style="text-align: center;">
+            <h1 style="color: white; font-size: 40pt;"> Todo List <img src="./sticky-note.png" alt="" width="70px" style="margin-left: 50px;"></h1>
+            <input style="width: auto; height: auto; border-radius: 5px; font-size: 15pt; padding: 7px;" type= "text" id="todo_in" placeholder="Add your text">
+            <button onclick="adding()" style="font-size: 15pt; border: solid 2px; padding: 5px; border-color: lightgray;">Add Items</button>
+            <button onclick="deleting()" style="font-size: 15pt; border: solid 2px; padding: 5px; border-color: lightgray;">Delete All Items</button>
+
+        </div>
+
+        <div>
+            <ol style=" color: white; list-style: none; text-align: center;" id="listitems" ></ol>
+
+        </div>
+
+    </DIV>
+
+</body>
+<script src="app.js"></script>
+
+</html>
